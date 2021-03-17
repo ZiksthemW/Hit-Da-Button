@@ -1,6 +1,6 @@
 import pygame
 from pygame.locals import *
-import time, random
+import random
 
 pygame.init()
 
@@ -78,7 +78,9 @@ def about_and_credits(): # This part is only a picture.
 def oyun():
     oyun_ekran = pygame.display.set_mode( (800,600) )
     enemy_button = pygame.Rect(random.randint(10, 500), random.randint(10, 500), 50, 25)
+    killer_button = pygame.Rect(random.randint(10, 500), random.randint(10, 500), 50, 25)
     score = 0
+    click_num = 7
     win_score = 25
     
     background = pygame.image.load("assets/etc/bg.png")
@@ -88,6 +90,7 @@ def oyun():
         oyun_ekran.fill((0, 0, 0))
         scoreText = font.render(f'Score: {score}', True, (255, 255, 255))
         toWin = font.render(f'To Win: {win_score - score}', True, (255, 255, 255))
+        toLose = font.render(f'To Lose: {click_num}', True, (255, 255, 255))
         for event in pygame.event.get():
             if event.type == MOUSEBUTTONDOWN:
                 if event.button == 1:
@@ -103,15 +106,20 @@ def oyun():
                 tiklandi = False
                 score += 1
                 enemy_button = pygame.Rect(random.randint(10, 500), random.randint(10, 500), 50, 25)
+            else:
+                click_num -= 1
+                if click_num == 0:
+                    the_end()
         
         if score > win_score:
             print("Score!!")
             the_end()
         
         oyun_ekran.blit(background, (0, 0))
-        pygame.draw.rect(oyun_ekran, (200, 10, 10), enemy_button)
-        oyun_ekran.blit(scoreText, (10, 10))
-        oyun_ekran.blit(toWin, (10, 45))
+        pygame.draw.rect(oyun_ekran, (10, 255, 10), enemy_button)
+        oyun_ekran.blit(scoreText, (350, 10))
+        oyun_ekran.blit(toWin, (350, 45))
+        oyun_ekran.blit(toLose, (350, 80))
         pygame.display.update()
         
 
