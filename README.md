@@ -12,6 +12,7 @@ As you can tell this game is still on development and needs more improvement and
 ## Main Menu
 
 [url=https://hizliresim.com/bsGvtJ][img]https://i.hizliresim.com/bsGvtJ.png[/img][/url]
+![Main-Menu-Pic](https://i.hizliresim.com/bsGvtJ.png)
 
 Credits
 
