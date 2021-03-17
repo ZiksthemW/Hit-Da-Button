@@ -5,23 +5,22 @@ It's a simple game about clicking the button that spawns randomly. Of course, yo
 
 To run it, use this command: `python game.py` or `python3 game.py` 
 
-# In-Game Pictures
+## In-Game Pictures
 
 As you can tell this game is still on development and needs more improvement and updates. So, ui will be completely changed soon.
 
-## Main Menu
+### Main Menu
 
-[url=https://hizliresim.com/bsGvtJ][img]https://i.hizliresim.com/bsGvtJ.png[/img][/url]
 ![Main-Menu-Pic](https://i.hizliresim.com/bsGvtJ.png)
 
-Credits
+### Credits
 
-[url=https://hizliresim.com/dHlUwi][img]https://i.hizliresim.com/dHlUwi.png[/img][/url]
+![Credits-Pic](https://i.hizliresim.com/dHlUwi.png)
 
-## Game
+### Game
 
-[url=https://hizliresim.com/XtFiwk][img]https://i.hizliresim.com/XtFiwk.png[/img][/url]
+![Credits-Pic](https://i.hizliresim.com/XtFiwk.png)
 
-Win & Lose
+### Win & Lose
 
-Go and find out yourself :))
+Go ahead and play the game to find out :))
